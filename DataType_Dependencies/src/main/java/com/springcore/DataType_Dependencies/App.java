@@ -1,5 +1,8 @@
 package com.springcore.DataType_Dependencies;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  *
@@ -14,6 +17,11 @@ public class App
         Student std1= new Student();
         std1.setstudentId(046);
         System.out.println(std1+"\n "+std);
+        
+        ApplicationContext  context = new ClassPathXmlApplicationContext("config.xml");
+        Student std2 = (Student) context.getBean("student1");
+        
+        System.out.println(std2);
     }
 }
 
