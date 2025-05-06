@@ -32,7 +32,8 @@
        
        <!--  using P schema -->
        
-       <bean class="com.springcore.DataType_Dependencies.Student" name="student3" p:studentId="25" p:studentName="Prem Pinreddy" p:studentAddress="Hyderabad" />
+       <bean class="com.springcore.DataType_Dependencies.Student" name="student3" p:studentId="25" 
+                                         p:studentName="Prem Pinreddy" p:studentAddress="Hyderabad" />
        
     
 
