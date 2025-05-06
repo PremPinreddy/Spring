@@ -14,16 +14,26 @@
     <bean class="com.springcore.DataType_Dependencies.Student" name="student1">
        <property name="studentId">
            <value>046</value>
-       </property>
-       
+       </property>       
        <property name="studentName">
            <value>Prem Chandra Reddy</value>
-       </property>
-       
+       </property>       
        <property name="studentAddress">
            <value>Gajwel</value>
        </property>
+      </bean>
+      
+      
+       <!--self closing tags -->
+       <bean class="com.springcore.DataType_Dependencies.Student" name="student2">
+       <property name="studentId" value="1410" />
+       <property name="studentName" value="Prem Reddy" />
+       </bean>
+       
+       <!--  using P schema -->
+       
+       <bean class="com.springcore.DataType_Dependencies.Student" name="student3" p:studentId="25" p:studentName="Prem Pinreddy" p:studentAddress="Hyderabad" />
+       
     
-    </bean>
 
 </beans>   

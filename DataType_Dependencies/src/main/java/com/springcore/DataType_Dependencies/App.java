@@ -21,7 +21,14 @@ public class App
         ApplicationContext  context = new ClassPathXmlApplicationContext("config.xml");
         Student std2 = (Student) context.getBean("student1");
         
+        Student std3 = (Student) context.getBean("student2");
+        
+        Student std4= (Student) context.getBean("student3");
+        		
+        
         System.out.println(std2);
+        System.out.println(std3);
+        System.out.println(std4);
     }
 }
 
