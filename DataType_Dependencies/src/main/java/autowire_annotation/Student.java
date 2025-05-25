@@ -7,7 +7,7 @@ public class Student {
 	@Autowired
 	@Qualifier("address1")
     private Address address;
-//    @Autowired
+    @Autowired
     private FullAddress fullAddress;
 	public Address getAddress() {
 		return address;
@@ -16,6 +16,14 @@ public class Student {
 //	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public FullAddress getFullAddress() {
+		return fullAddress;
+	}
+
+	public void setFullAddress(FullAddress fullAddress) {
+		this.fullAddress = fullAddress;
 	}
 
 	@Override
